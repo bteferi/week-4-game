@@ -16,7 +16,7 @@
   <div class="container  mb-2 p-2">
     <div class="row border border-primary">
       <div class="col-sm font-weight-bold">
-        <h1> Crystal Collector </h1>
+        <h1> Shine Bright Like A Diamond </h1>
 
       </div>
     </div>
@@ -26,13 +26,12 @@
   <div class="container mb-3 p-3">
     <div class="row border border-primary">
       <div class="col-sm ">
-        <h1 class="mb-3"> Game Discription </h1>
+        <h1 class="mb-3">Game description:</h1>
         <!-- this is a text holder paragraph -->
         <!--Game description can go here   -->
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          You will be given a random number at the start of the game. There are four diamonds below. By clicking on a diamonds you will add a specific amount of points to your total score. You win the game by matching your total score to random
+          number. The value of each crystal is hidden from you until you click it. Each time when the game restarts, the game will change the value of each crystal. Good Luck.<p> - Best, Beza :)</p>
         </p>
       </div>
     </div>
@@ -43,8 +42,8 @@
   <div class="container">
     <div class="row border border-primary">
       <div class="col-sm-8">
-        <p> Comuter generated Number :
-        <span id="computer_guess"></span></p>
+        <h1> Comuter generated Number :
+        <span id="computer_guess" class="font-weight-bold"></span></h2>
       </div>
 
 
@@ -53,11 +52,11 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-sm">
-              Show win here: <span id="win"></span>
+            <div class="col-sm badge badge-success" >
+              WIN: <span id="win" class="font-weight-bold"></span>
             </div>
-            <div class="col-sm">
-              Show loses here: <span id="loses"></span>
+            <div class="col-sm badge badge-danger">
+              LOSSES: <span id="loses" class="font-weight-bold"></span>
             </div>
 
           </div>
@@ -69,7 +68,7 @@
 
   <!--Below is going to be the area where my cristal images wil be stored at  -->
   <!-- How to make images hold a randome number value? -->
-  <div class="container border border-primary  mt-4 p-3">
+  <div class="container mt-4 p-3">
     <div class="row">
 
       <div class="col-sm crystal" id="crystal_1">
@@ -95,14 +94,14 @@
 
   <div class="container mb-5 p-3">
     <div class="row border border-primary">
-      <div class="col-sm ">
-        <h1>Current guess Sum : <span class="Current_guess"></span></h1>
+      <div class="col-sm badge badge-dark">
+        <h1>Current Guess  : <span class="Current_guess font-weight-bold"></span></h1>
 
       </div>
     </div>
   </div>
   <script src="assets/javascript/game.js">
-    </script>
+  </script>
 </body>
 
 </html>
