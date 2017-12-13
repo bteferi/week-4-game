@@ -31,6 +31,9 @@ $(".crystal").on("click", function() {
 
   // this needs to show at the bottom for what you have so far at the bottom
   var current_signle_guess = ($(this).attr("data-crystal_Value"));
+
+// this refers to the image that is being clicked ..jqury will create an pobject around it
+
   // this will update the sum at the bottom - it will add on to what ever image is clicked plus next click
   current_signle_guess = parseInt(current_signle_guess); // here i am changing the single guess to Intg.
 
