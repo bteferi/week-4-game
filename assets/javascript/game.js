@@ -12,25 +12,25 @@ var random_crystal_value = Math.floor(Math.random() * 12) + 1;
 //===============================================================//
 ///crate a custom attr to hold a value for each Crystal//
 
-$("#crystal_1").attr("data-crystal_Value", Math.floor(Math.random() * 12) + 1);
 
-$("#crystal_2").attr("data-crystal_Value", Math.floor(Math.random() * 12) + 1);
+for (i=0; i<4; i++){
+var crystal_image = $("<img>",{src:"assets/images/diamond.JPG",
+                              class:"img-thumbnail col-sm-3 crystalValue",
+                              'data-crystalValue':Math.floor(Math.random() * 12) + 1});
 
-$("#crystal_3").attr("data-crystal_Value", Math.floor(Math.random() * 12) + 1);
+$("#crystal_1").append(crystal_image);
 
-$("#crystal_4").attr("data-crystal_Value", Math.floor(Math.random() * 12) + 1);
-//
-// $(".crystal").each(function(){
-//   console.log($(this).attr("data-crystal_Value"));
-// });
+
+};
+
 
 //=========================================================//
 // Here we created an on-click event that responds to button clicks of the crystal image.
 
-$(".crystal").on("click", function() {
+$(".crystalValue").on("click", function() {
 
   // this needs to show at the bottom for what you have so far at the bottom
-  var current_signle_guess = ($(this).attr("data-crystal_Value"));
+  var current_signle_guess = ($(this).attr("data-crystalValue"));
 
 // this refers to the image that is being clicked ..jqury will create an pobject around it
 
